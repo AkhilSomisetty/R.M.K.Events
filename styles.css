@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebee;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-container, .event-logo {
+    display: flex;
+    align-items:center;
+}
+
+.logo-container img, .event-logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f85959;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    /* background: #ff1744;
+    border-radius: 5px; */
+    color: #ffffff;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h2, h3 {
+    color: #d50000;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.event-buttons {
+    display: inline-block;
+    background-color: #ff5555; /* Green background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Padding to make the button larger */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .event-buttons:hover {
+    background-color: #d50000; /* Darker green when hovered */
+    transform: translateY(-2px); /* Lift the button slightly */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .event-buttons:active {
+    transform: translateY(1px); /* Slightly lower when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow when clicked */
+  }
+  
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #d50000;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}

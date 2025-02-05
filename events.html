@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Colosseum 2k25</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="college-logo.jpg" alt="College Logo">
+            <h1>R.M.K. Engineering College</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="https://forms.gle/5heCCA2eh9FTcL976">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://rmkec.ac.in/cel/showtransportroutes.php?dept=transport" target="_blank">Route</a></li>
+            </ul>
+        </nav>
+        <div class="event-logo">
+            <img src="event-logo.jpg" alt="Event Logo">
+        </div>
+    </header>
+    
+    <main>
+        <section id="events">
+            <h2>Technical Events</h2>
+            <div class="event-buttons">
+                <button onclick="showEventDetails('paper')">Paper Presentation</button>
+                <button onclick="showEventDetails('cad')">CAD Crash</button>
+                <button onclick="showEventDetails('craft')">Craft the Struct</button>
+                <button onclick="showEventDetails('quiz')">Testing an Engineer</button>
+                <button class="surprise" onclick="showEventDetails('surprise')">Surprise Events</button>
+            </div>
+            <div id="event-description">
+                <p>Select an event to view details.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Colosseum 24 - RMK Engineering College</p>
+    </footer>
+    
+    <script>
+        function showEventDetails(event) {
+            const descriptions = {
+                'paper': "Step into the spotlight and present your innovative research in the Paper Presentation event. Showcase your technical studies, research findings, and groundbreaking ideas in various fields of Civil Engineering.",
+                'cad': "Test your drafting skills in CAD Crash, an AutoCAD competition! Participants will be given specific requirements and must create an accurate draft within the given time.",
+                'craft': "Challenge your creativity in Craft the Struct! Build a structure within a set time frame and test its strength under load. Design and aesthetics matter too!",
+                'quiz': "Step up and prove your knowledge in Testing an Engineer, a quiz competition tailored for Civil Engineering students! Compete with your peers and demonstrate your technical skills.",
+                'surprise': "Get ready for unexpected fun in the Surprise Events! To join, participants must take part in at least one technical event first. Be ready for some thrilling challenges!"
+            };
+            
+            document.getElementById('event-description').innerHTML = `<p>${descriptions[event]}</p>`;
+        }
+    </script>
+</body>
+</html>
