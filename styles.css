@@ -8,8 +8,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
+@media screen and (max-width: 768px) {
+    /* Example */
+    body {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  }
+ 
 /* Header Styles */
 header {
     display: flex;
